@@ -1,0 +1,71 @@
+/* Variables */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  background-color: #daaa0e;
+  width: 1350px;
+  min-height: 535px;
+  padding: 10px 20px 10px 20px;
+}
+
+main {
+  border: 20px solid white;
+  min-height: 590px;
+}
+main section {
+  height: 550px;
+  width: 50%;
+  float: left;
+}
+main section img {
+  width: 750px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  margin: 20px 20px;
+}
+ul li {
+  display: inline;
+  color: white;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#intro-text {
+  background-color: #d4d5d8;
+  font-family: "Arial", "Helvetica", "Sans-Serif";
+  width: 50%;
+  text-align: center;
+}
+#intro-text span {
+  margin-top: 22%;
+  font-family: "Sacramento", "cursive";
+  font-size: 30px;
+  display: inline-block;
+}
+#intro-text h3 {
+  font-size: 30px;
+}
+#intro-text button {
+  background-color: #daaa0e;
+  border: 0px;
+  padding: 15px 10px;
+  color: white;
+}
+
+#intro-image {
+  background-image: url("../images/louisiana-barbecued-shrimp.webp");
+  background-size: cover;
+}
+
+footer {
+  margin: 20px 20px;
+}

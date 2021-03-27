@@ -1,0 +1,94 @@
+@import "colors";
+
+/* Variables */
+// fonts
+$font_normal: "Arial", "Helvetica", "Sans-Serif";
+$font_cursive: "Sacramento", "cursive";
+$cursive_font_size: 30px;
+$h3_size: 30px;
+
+// dimentions
+$width: 1350px;
+$min-height: 535px;
+$section-height: 550px;
+$main-height: 590px;
+$img-height: 750px;
+
+//mixin
+@mixin spacing {
+    margin: 20px 20px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    background-color: $clr1_orange;
+    width: $width;
+    min-height: $min-height;
+    padding: 10px 20px 10px 20px;
+}
+
+main{
+    border: 20px solid white;
+    min-height: $main-height;
+    section{
+        height: $section-height;
+        width: 50%;
+        float: left;
+        img{
+            width: $img-height;
+        }
+    }
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    @include spacing();
+    li{
+        display: inline;
+        color: $clr_white;
+        a{
+            text-decoration: none;
+            color: $clr_white;
+        }
+    }
+}
+
+
+#intro-text {
+    background-color: $clr3_gray;
+    font-family: $font_normal;
+    width: 50%;
+    text-align: center;
+    span{
+        margin-top: 22%;
+        font-family: $font_cursive;
+        font-size: $cursive_font_size;
+        display: inline-block;
+    };
+    h3{
+        font-size: $h3_size;
+    };
+    button{
+        
+        background-color: $clr1_orange;
+        border: 0px;
+        padding: 15px 10px;
+        color: white;
+    }
+}
+
+#intro-image{
+    background-image: url("../images/louisiana-barbecued-shrimp.webp");
+    background-size: cover;
+}
+
+footer{
+    @include spacing()
+}
